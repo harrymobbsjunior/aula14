@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doce Gourmet</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header>
+        <img src="img/logo.jpg" alt="Logo da empresa">
+        <p class="by">By: Harry, Patrícia, <br> Mauro e Henrique</p>
+    </header>
+    
+
+    <main>
+        <div class="container">
+
+            <form action="#">
+                <fieldset>
+                    <legend>Dados Pessoais: </legend>
+
+                    <label for="nome">Nome: </label>
+                    <input type="text" name="nome" id="nome">
+
+                    <label for="email">E-mail: </label>
+                    <input type="email" name="email" id="email">
+
+                    <label for="telefone">Telefone: </label>
+                    <input required type="tel" name="telefone" id="telefone" pattern="+[0-9]{2}[0-9]{11}">
+
+                </fieldset>
+
+                <fieldset>
+                    <legend>Informações do Pedido</legend>
+                    <label for="doces">Doces: </label>
+                    <select name="lanches" id="lanches">
+                        <option value="">Escolha uma opção</option>
+                        <optgroup label="Doces Gourmet">
+                            <option value="doce01">Brigadeiro gourmet de micro-ondas</option>
+                            <option value="doce02">Brigadeiro gourmet com chocolate ao leite</option>
+                            <option value="doce03">Brigadeiro gourmet de chocolate</option>
+                            <option value="doce04">Brigadeiro gourmet com chocolate meio amargo</option>
+                            <option value="doce05">Brigadeiro gourmet de colher</option>
+                            <option value="doce06">Brigadeiro gourmet com whisky</option>
+                            <option value="doce07">Brigadeiro gourmet com whisky</option>
+                            <option value="doce08">Brigadeiro gourmet de Kit Kat</option>
+                        </optgroup>
+                        <optgroup label="Trufas">
+                            <option value="doce09">Trufa Brigadeiro</option>
+                            <option value="doce10">Trufa Morango</option>
+                            <option value="doce11">Trufa Cereja</option>
+                        </optgroup>
+                    </select>
+                    
+                    <label for="telefone">Observação: </label>
+                    <textarea name="observacao" id="" cols="30" rows="10"></textarea>
+                </fieldset>
+
+                <fieldset class="agendamento">
+                    <legend>Agendar Recebimento</legend>
+                    <label for="data">Data: </label>
+                    <input type="text" name="data" id="data">
+                                        
+                    <label for="hora">Hora: </label>
+                    <input type="text" name="hora" id="hora">
+                </fieldset>
+
+                <input class="btnsuccess" type="submit" value="Enviar">
+                <input class="btndanger" type="reset" value="Cancelar">
+            </form>
+        </div>
+
+    </main>
+
+</body>
+
+</html>
